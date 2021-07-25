@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dotcode</title>
+</head>
+<style>
+#Video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
+  position: absolute;
+    z-index: 0;
+    filter: blur(8px);
+}
+p{
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+.center {
+      
+      margin: 0 auto;
+      
+    }
+
+.awesome {
+      
+      font-family: futura;
+      font-style: italic;
+      
+      width:100%;
+      
+      margin: 0 auto;
+      text-align: center;
+      
+      color:#313131;
+      font-size:100px;
+      font-weight: bold;
+      position: absolute;
+      -webkit-animation:colorchange 20s infinite alternate;
+      
+      
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }
+.center .btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+  text-align: center;
+}
+
+.center .btn:hover {
+  background-color: rgb(2, 78, 2);
+}
+</style>
+<body>
+    <video autoplay muted loop id="Video" width="1000" height="540">
+        <source src="video.mp4" type="video/mp4">
+      </video>
+      <div id="a" class='center'><p class='awesome'>Welcome to Dot Code Project</p>
+        <form action="index.php" method="POST">
+        <button class="btn">Get Start >></button>
+    </form>
+    </div>
+      
+</body>
+</html>
